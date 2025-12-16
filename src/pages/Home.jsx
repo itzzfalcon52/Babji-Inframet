@@ -9,8 +9,7 @@ import FormHome from "../components/FormHome";
 import Footer from "../components/Footer";
 import { NavLink } from "react-router-dom";
 //import { Helmet } from "react-helmet-async";
-import usePageTitle from "../hooks/UsePageTitle";
-
+import usePageTitle from "../hooks/usePageTitle";
 const slides = [
   {
     image: "/slider_1.jpg",

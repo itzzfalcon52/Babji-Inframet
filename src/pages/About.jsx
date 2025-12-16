@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 //import { Helmet } from "react-helmet-async";
-import usePageTitle from "../hooks/UsePageTitle";
+import usePageTitle from "../hooks/usePageTitle";
 
 function About() {
   usePageTitle("About Us | Babji Inframet");
