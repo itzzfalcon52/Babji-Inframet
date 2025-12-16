@@ -8,7 +8,8 @@ import Products from "../components/Products";
 import FormHome from "../components/FormHome";
 import Footer from "../components/Footer";
 import { NavLink } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+//import { Helmet } from "react-helmet-async";
+import usePageTitle from "../hooks/UsePageTitle";
 
 const slides = [
   {
@@ -35,15 +36,10 @@ const slides = [
 ];
 
 function Home() {
+  usePageTitle("Babji Inframet | Scrap Metal & Alloy Supplier");
+
   return (
     <>
-      <Helmet>
-        <title>Babji Inframet | Scrap Metal & Alloy Material Supplier</title>
-        <meta
-          name="description"
-          content="Babji Inframet is a trusted scrap metal and alloy materials supplier based in Gujarat, India."
-        />
-      </Helmet>
       <div className="relative h-screen">
         <Navbar variant="transparent" position="absolute" />
         <Slider slides={slides} />

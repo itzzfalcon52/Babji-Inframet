@@ -2,9 +2,12 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Helmet } from "react-helmet-async";
+//import { Helmet } from "react-helmet-async";
+import usePageTitle from "../hooks/UsePageTitle";
 
 function ContactPage() {
+  usePageTitle("Contact Us | Babji Inframet");
+
   const formRef = useRef();
   const [status, setStatus] = useState("");
   const [showModal, setShowModal] = useState(false);
@@ -32,10 +35,6 @@ function ContactPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Contact Us | Babji Inframet</title>
-      </Helmet>
-
       <div className="w-full min-h-screen bg-slate-50">
         <Navbar variant="solid" position="sticky" />
 

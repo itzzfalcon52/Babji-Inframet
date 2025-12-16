@@ -4,12 +4,10 @@ import "./index.css";
 import App from "./App.jsx";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import { HelmetProvider } from "react-helmet-async";
+//mport { HelmetProvider } from "react-helmet-async";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <HelmetProvider>
-      <App />
-    </HelmetProvider>
+    <App />
   </BrowserRouter>
 );

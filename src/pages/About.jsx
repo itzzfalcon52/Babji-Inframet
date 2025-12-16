@@ -1,14 +1,12 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import { Helmet } from "react-helmet-async";
+//import { Helmet } from "react-helmet-async";
+import usePageTitle from "../hooks/UsePageTitle";
 
 function About() {
+  usePageTitle("About Us | Babji Inframet");
   return (
     <>
-      <Helmet>
-        <title>About Us | Babji Inframet</title>
-      </Helmet>
-
       <div className="w-full m-0 p-0 bg-slate-100">
         {/* Navbar */}
         <Navbar variant="solid" position="sticky" />

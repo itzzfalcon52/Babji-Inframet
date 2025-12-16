@@ -1,7 +1,8 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { NavLink } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+//import { Helmet } from "react-helmet-async";
+import usePageTitle from "../hooks/UsePageTitle";
 
 const products = [
   {
@@ -37,11 +38,10 @@ const products = [
 ];
 
 function ProductPage() {
+  usePageTitle("Our Products | Babji Inframet");
+
   return (
     <>
-      <Helmet>
-        <title>Our Products | Babji Inframet</title>
-      </Helmet>
       <div className="w-full bg-slate-50">
         {/* Navbar */}
         <Navbar variant="solid" position="sticky" />

@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Helmet } from "react-helmet-async";
+//import { Helmet } from "react-helmet-async";
 
 function GetQuotation() {
   const formRef = useRef();
@@ -30,9 +30,6 @@ function GetQuotation() {
 
   return (
     <>
-      <Helmet>
-        <title>Get a Quotation | Babji Inframet</title>
-      </Helmet>
       <div className="w-full min-h-screen bg-slate-50">
         {/* Navbar */}
         <Navbar variant="solid" position="sticky" />
