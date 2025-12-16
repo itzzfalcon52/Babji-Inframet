@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
+import { NavLink } from "react-router-dom";
 
 function Slider({ slides }) {
   const [count, setCount] = useState(0);
@@ -39,7 +40,7 @@ function Slider({ slides }) {
               <span className="relative inline-block overflow-hidden rounded-md px-3 py-1">
                 {/* Sliding background */}
                 <span
-                  className={`absolute inset-0 bg-green-500 transition-transform duration-700 ease-out
+                  className={`absolute inset-0 bg-green-800 transition-transform duration-700 ease-out
       ${index === count ? "translate-x-0" : "-translate-x-full"}
     `}
                 />
@@ -54,9 +55,12 @@ function Slider({ slides }) {
             <p className="text-white text-lg md:text-xl max-w-2xl mb-6">
               {slide.desc}
             </p>
-            <button className="bg-green-500 h-18 text-white  w-64 text-2xl hover:-translate-y-2.5 rounded-md">
+            <NavLink
+              to="/Quotation"
+              className="bg-green-700 hover:bg-green-800 cursor-pointer h-18 text-white  w-64 text-2xl hover:-translate-y-2.5 rounded-md p-4"
+            >
               Get Quotation
-            </button>
+            </NavLink>
           </div>
         </div>
       ))}

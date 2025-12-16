@@ -12,3 +12,13 @@
 .animate-scroll {
   animation: scroll 20s linear infinite;
 }
+.input {
+  @apply border border-slate-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-700 outline-none;
+}
+.section-title {
+  @apply text-2xl font-semibold text-slate-900 mt-12 mb-4;
+}
+
+.sub-title {
+  @apply text-lg font-semibold text-slate-800 mt-6 mb-2;
+}

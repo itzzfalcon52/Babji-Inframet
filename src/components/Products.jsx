@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const products = [
   {
@@ -47,7 +48,7 @@ function Products() {
   const product = products[count];
 
   return (
-    <section className="w-full h-screen bg-gray-50 py-24">
+    <section className="w-full md:h-screen bg-gray-50 py-24">
       {/* Section Heading */}
       <h2 className="text-center text-3xl md:text-4xl font-bold mb-16">
         Our Product Range
@@ -75,12 +76,13 @@ function Products() {
 
               <p className="text-slate-600 text-lg max-w-xl">{product.desc}</p>
 
-              <button
-                className="bg-green-500 text-white px-8 py-4 rounded-xl
+              <NavLink
+                to="/products"
+                className="bg-green-700 text-white md:px-8 md:py-4 px-4 py-2 rounded-xl
   hover:bg-green-600 hover:-translate-y-0.5 transition-all duration-300 shadow-md"
               >
                 Product Details
-              </button>
+              </NavLink>
             </div>
           </div>
         </div>

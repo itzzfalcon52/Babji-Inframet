@@ -5,13 +5,17 @@ import Navbar from "../components/Navbar";
 //mport products from "../components/products";
 import Slider from "../components/Slider";
 import Products from "../components/Products";
+import FormHome from "../components/FormHome";
+import Footer from "../components/Footer";
+import { NavLink } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const slides = [
   {
     image: "/slider_1.jpg",
     titleStart: "Reliable ",
     highlight: " Scrap Metal ",
-    titleEnd: "Manufacturing",
+    titleEnd: "Procurement",
     desc: "Babji Enterprises delivers high-quality ferrous and non-ferrous scrap to industries with consistency and integrity.",
   },
   {
@@ -33,13 +37,22 @@ const slides = [
 function Home() {
   return (
     <>
+      <Helmet>
+        <title>Babji Inframet | Scrap Metal & Alloy Material Supplier</title>
+        <meta
+          name="description"
+          content="Babji Inframet is a trusted scrap metal and alloy materials supplier based in Gujarat, India."
+        />
+      </Helmet>
       <div className="relative h-screen">
-        <Navbar />
+        <Navbar variant="transparent" position="absolute" />
         <Slider slides={slides} />
       </div>
       <AboutUs />
       <CompanySlider />
       <Products />
+      <FormHome />
+      <Footer />
     </>
   );
 }
