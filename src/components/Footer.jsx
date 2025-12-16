@@ -103,7 +103,7 @@ function Footer() {
             <ul className="space-y-6 text-sm">
               <li>
                 <p className="font-semibold text-white">Murtaza Barodawala</p>
-                <p className="text-slate-400">Dounder/CEO</p>
+                <p className="text-slate-400">Founder/CEO</p>
                 <p>📞 +91 9898761755</p>
                 <p>✉ murtuza.barodawala@babjienterprises.com</p>
               </li>
