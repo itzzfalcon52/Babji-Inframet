@@ -87,7 +87,7 @@ function Navbar({
       {/* MOBILE MENU */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
-          open ? "max-h-[400px]" : "max-h-0"
+          open ? "h-100" : "max-h-0"
         }`}
       >
         <div className="bg-white text-slate-900 px-6 py-6 space-y-6 shadow-md">
