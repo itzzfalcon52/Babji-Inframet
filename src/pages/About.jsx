@@ -33,9 +33,9 @@ function About() {
           <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
             {/* Image */}
             <img
-              src="/godown.jpg"
+              src="/godown.png"
               alt="Babji Inframet Facility"
-              className="rounded-2xl shadow-xl ring-1 ring-slate-200 hover:scale-[1.02] transition"
+              className="rounded-2xl shadow-xl shadow-green-200 ring-1 ring-slate-200 hover:scale-[1.02] transition"
             />
 
             {/* Text */}

@@ -5,7 +5,7 @@ function AboutUs() {
         {/* Image column */}
         <div className="md:h-full basis-1/3 p-12 ">
           <img
-            src="/godown.jpg"
+            src="/godown.png"
             alt="Babji Enterprises Facility"
             className="h-full w-full object-cover rounded-t-3xl shadow-lg shadow-green-500/20
 "
