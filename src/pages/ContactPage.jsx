@@ -24,12 +24,17 @@ function ContactPage() {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
-        () => {
+        (res) => {
+          console.log("EmailJS success:", res);
           setStatus("success");
           setShowModal(true);
           formRef.current.reset();
         },
-        () => setStatus("error")
+        (err) => {
+          console.error("EmailJS error:", err);
+          alert(JSON.stringify(err, null, 2));
+          setStatus("error");
+        }
       );
   };
 
