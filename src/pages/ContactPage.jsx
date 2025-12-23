@@ -123,10 +123,10 @@ function ContactPage() {
                 <p className="mt-4">
                   📧{" "}
                   <a
-                    href="mailto:scrap@babjiinframet.com"
+                    href="mailto:procurement@babjiinframet.com"
                     className="text-green-700 font-medium"
                   >
-                    scrap@babjiinframet.com
+                    procurement@babjiinframet.com
                   </a>
                 </p>
               </div>
